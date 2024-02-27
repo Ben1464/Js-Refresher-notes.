@@ -35,3 +35,20 @@ console.log(7+18);
  let student = "Alex";
  let greatings = "Hello";
  console.log(`${greatings} ${student}!`);
+ //Logical operators
+ //&&
+ let a =12;
+ let b = -2;
+ if (a>0 && b>0) {
+    console.log("Both a and b are positive numbers");
+ } else {
+    console.log("Both a and b are negative numbers");
+ }
+ //OR II
+ let k = 12;
+ let m = -2;
+ if (k>0 || m>0) {
+    console.log("Either k or m is positive number");
+ } else {
+    console.log("Both k and m are negative numbers");
+ }
