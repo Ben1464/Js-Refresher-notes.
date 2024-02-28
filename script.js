@@ -68,3 +68,28 @@ console.log(message);
 let price = 400;
 let food = (price >= 600)? "I can't buy": "I can't buy";
 console.log(food);
+
+//Functions
+function myFunction (p1,p2){
+   return p1*p2;
+}
+let result = myFunction(4,6);
+console.log(result);
+
+function greet (name) {
+   console.log("Hello " + name + "!");
+}
+
+greet ("John");
+greet ("Bob");
+greet ("Alex");
+
+//Anonymous Function
+let addition = function (x,y) {
+   return x + y;
+}
+console.log(addition(6,9));
+
+//Arrow Function
+let subtraction = (x,y) => x - y;
+console.log(subtraction(6,9));
