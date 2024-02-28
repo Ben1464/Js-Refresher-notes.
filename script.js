@@ -52,3 +52,19 @@ console.log(7+18);
  } else {
     console.log("Both k and m are negative numbers");
  }
+ // Not (!)
+ let p = 12;
+ let q = -2;
+ if (!(p>0)) {
+    console.log("p is not positive number");
+ } else {
+    console.log("p is positive number");
+ }
+//Ternary operator
+let age = 18;
+let message = (age >= 18) ? "I can vote" : "I can't vote";
+console.log(message);
+
+let price = 400;
+let food = (price >= 600)? "I can't buy": "I can't buy";
+console.log(food);
