@@ -93,3 +93,36 @@ console.log(addition(6,9));
 //Arrow Function
 let subtraction = (x,y) => x - y;
 console.log(subtraction(6,9));
+
+// Immedietly invoked function
+(function () {
+   console.log("I am an immediately invoked function");
+})()
+//Generator function 
+function* generateSequence() {
+   yield 1;
+   yield 2;
+   yield 3;
+}
+let generator = generateSequence();
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+console.log(generator.next().value);
+
+//Higher order functions
+function squre(x){
+   return x*x;
+}
+const numbers = [1,2,3,4,5];
+const squreNumbers = numbers.map(squre);
+console.log(squreNumbers);
+
+//Objects
+const person = {
+   name: "John",
+   age: 30,
+   city: "Kerugoya"
+}
+console.log(person);
+console.log(person.city);
