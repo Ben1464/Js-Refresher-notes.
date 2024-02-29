@@ -124,5 +124,24 @@ const person = {
    age: 30,
    city: "Kerugoya"
 }
-console.log(person);
+
 console.log(person.city);
+person.status= "Married";
+console.log(person);
+
+// Nested objects (They have other objects as one of its properties)
+let person2 = {
+
+   name: "Bob",
+   age: 25,
+   address: {
+      city: "Kerugoya",
+      country: "Nigeria"
+   },
+   location:{
+      pysical: "Shagzs",
+      map: "Midle west"
+
+   }
+}
+console.log(person2);
