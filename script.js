@@ -145,3 +145,54 @@ let person2 = {
    }
 }
 console.log(person2);
+
+//Object methods 
+let calculator = {
+   add: function (a,b) {
+      return a + b;
+   },
+   subtraction: function (a,b) {
+      return a - b;
+   },
+
+   multiplication: function (a,b) {
+      return a * b;   
+}
+};
+console.log(calculator.add(6,9));
+console.log(calculator.subtraction(6,9));
+console.log(calculator.multiplication(6,9));
+
+//This key word in object methods
+let person3 = {
+   name: "John",
+   age: 30,
+   sayHello: function () {
+      console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+   }
+};
+person3.sayHello();
+
+
+//Inheritance 
+// Parent object
+var Animal = {
+   speak: function() {
+     return "I am an animal";
+   }
+ };
+ 
+ // Child object inheriting from Animal
+ var Dog = Object.create(Animal);
+ Dog.bark = function() {
+   return "Woof!";
+ };
+ 
+ // Creating instances of Dog
+ var dog1 = Object.create(Dog);
+ var dog2 = Object.create(Dog);
+ 
+ console.log(dog1.speak()); // Output: "I am an animal"
+ console.log(dog1.bark());  // Output: "Woof!"
+ console.log(dog2.speak()); // Output: "I am an animal" 
+
