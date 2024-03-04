@@ -195,4 +195,39 @@ var Animal = {
  console.log(dog1.speak()); // Output: "I am an animal"
  console.log(dog1.bark());  // Output: "Woof!"
  console.log(dog2.speak()); // Output: "I am an animal" 
+ //Arrays 
+ const fruits = ["apple", "banana", "orange"];
+ console.log(fruits);
+ console.log(fruits[2]);
+ fruits [3] = "mango";
+ fruits.toString();
+ console.log(fruits);
+
+ // Looping through an array
+ // Using for loop
+ const fruitsRemaining = ["apple", "banana", "orange"];
+ for (let i = 0; i < fruitsRemaining.length; i++) {
+   console.log(fruitsRemaining[i]);
+ }
+ //using forEach method
+ var array = [1, 2, 3, 4, 5];
+
+array.forEach(function(item) {
+    console.log(item);
+});
+//Array methods 
+var products = ["Optimizer","Lavender","Integra","Ranger "]
+products.push("Cyclone");//Adds an elelemnt to the end of the array
+products.pop();//Remove the last element of an array
+products.unshift("Ranger");//Add an element to the beginning of an array
+products.shift();//Remove the first element of an array
+products.forEach(function(item){
+   console.log(item);
+});
+products.sort();//Sorts the array
+products.reverse();//Reverses the array
+products.splice(1,2);//Removes elements from the array
+products.splice(1,0,"Lavender");//Adds an element to the array
+products.splice(1,1);//Removes an element from the array
+console.log(products);
 
