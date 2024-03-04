@@ -231,3 +231,30 @@ products.splice(1,0,"Lavender");//Adds an element to the array
 products.splice(1,1);//Removes an element from the array
 console.log(products);
 
+//Array iteration methods
+//for each () (calls a call back function for each array item)
+let ages  = [2,5,6,4,];
+ages.forEach(function(ages, index) {
+   console.log("Element at index " + index + " is: " + ages);
+ });
+ // map ()  method creates a new array by performing a function on each array element.
+ let ages2 = [2,5,6,4,];
+ let ages3 = ages2.map(function(ages2) {
+   return ages2 * 7;
+ });
+ console.log(ages3);
+ // filter () creates a new array with all elements that pass the test implemented by the provided function
+ let numbers4 = [3,7,9,4,0,23];
+ const evenNumbers = numbers4.filter(function(numbers4){
+   return numbers4 % 2 === 0;
+ });
+ console.log(evenNumbers);
+ // Reduce () is used to reduce the array to a single value. It executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+ let numbers5 = [3,7,9,4,0,23];
+ const summation = numbers5.reduce(function(total, numbers5) {
+   return total + numbers5;
+ });
+ console.log(summation);
+
+ 
+
