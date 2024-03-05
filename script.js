@@ -311,7 +311,7 @@ ages.forEach(function(ages, index) {
  } else {
    console.log("I can't do anything");
  }
- //COnditional statements using switch
+ //Conditional statements using switch
  let age5 = 18;
  switch (age5) {
    case 18:
@@ -327,5 +327,32 @@ ages.forEach(function(ages, index) {
      console.log("I can't do anything");
  }
 
+ let price3 =  5000;
+ if (price3 <= 2500) {
+   console.log("I can afford to buy");
+ }else if (price3 <= 3000){
+   console.log("I can still buy");
+ } else {
+   console.log("Thats beyong what i can afford ");
+ }
+
+ let price4 = 780;
+ switch(price4){
+   case 600:
+      console.log("This is cheap i can afford");
+      break;
+   case 700:
+      console.log("THis is within my affording Range");
+      break;
+   case 800:
+      console.log("Now i cant afford");
+      break;
+   case 900:
+      console.log("This is way beyong my expectatations");
+      break;
+      default:
+      console.log("THis is not to be considered");
+           
+ }
  
 
