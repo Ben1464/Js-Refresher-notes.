@@ -336,6 +336,7 @@ ages.forEach(function(ages, index) {
    console.log("Thats beyong what i can afford ");
  }
 
+
  let price4 = 780;
  switch(price4){
    case 600:
@@ -351,8 +352,57 @@ ages.forEach(function(ages, index) {
       console.log("This is way beyong my expectatations");
       break;
       default:
-      console.log("THis is not to be considered");
+      console.log("This is not to be considered");
            
  }
+ 
+ //Example 2 of switch case
+ switch (new Date().getDay()) {
+   case 0:
+     day = "Sunday";
+     break;
+   case 1:
+     day = "Monday";
+     break;
+   case 2:
+      day = "Tuesday";
+     break;
+   case 3:
+     day = "Wednesday";
+     break;
+   case 4:
+     day = "Thursday";
+     break;
+   case 5:
+     day = "Friday";
+     break;
+   case 6:
+     day = "Saturday";
+     default:
+      text = "Looking forward to the Weekend";
+    break;
+  case 6:
+    text = "Today is Saturday";
+    break;
+  case 0:
+    text = "Today is Sunday";
+}
+ console.log(day);
+ //loops 
+ // the basic stracture of a for loop is (for (initialization; condition; iteration) {
+  // code block to be executed
+ //}
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+  }
+  for (let i =0; i<10; i++){
+    console.log(i);
+  }
+  //While loop
+  let i = 0;
+  while (i < 5) {
+    console.log(i);
+    i++;
+  }
  
 
