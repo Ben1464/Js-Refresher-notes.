@@ -473,5 +473,33 @@ class Car {
  myAccount.deposit(500); // Output: 500 deposited. Current balance: 1500
  myAccount.withdraw(200); // Output: 200 withdrawn. Current balance: 1300
  myAccount.display(); // Output: Account owner: John Doe
-                      //         Current balance: 1300
+
+ 
+ //Example 3
+ class Product{
+   constructor(name,price){
+   this.name = name;
+   this.price = price;
+ }
+ displayProduct(){
+   console.log(`product: ${this.name}`);
+   console.log(`price:$${this.price }`);
+
+ }
+ calculateTotal(salesTax){
+   return this.price*(this.price*salesTax);
+ }
+}
+
+const salesTax = 0.16;
+
+ const product1 = new Product ("pen",12);
+ const product2 = new Product ("book",23);
+
+ product1.displayProduct();
+ product2.displayProduct();
+ const Total1 = product1.calculateTotal(salesTax);
+ console.log (`Total price (with tax) for Pen :$${product1.calculateTotal(salesTax)}`);
+ const Total2 = product2.calculateTotal(salesTax);
+ console.log (`Total price (with tax) for Book :$${product2.calculateTotal(salesTax)}`);
  
