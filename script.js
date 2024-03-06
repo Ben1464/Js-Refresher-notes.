@@ -404,5 +404,74 @@ ages.forEach(function(ages, index) {
     console.log(i);
     i++;
   }
- 
 
+
+  // Classes
+  // Define a class called 'Car'
+class Car {
+   // Constructor to initialize properties
+   constructor(make, model, year) {
+     this.make = make;
+     this.model = model;
+     this.year = year;
+   }
+ 
+   // Method to get the age of the car
+   getAge() {
+     const currentYear = new Date().getFullYear();
+     return currentYear - this.year;
+   }
+ 
+   // Method to display car details
+   displayDetails() {
+     return `This is a ${this.year} ${this.make} ${this.model}.`;
+   }
+ }
+ 
+ // Create an instance of the 'Car' class
+ const myCar = new Car('Toyota', 'Camry', 2015);
+ 
+ // Access properties and methods of the object
+ console.log(myCar.displayDetails()); // Output: This is a 2015 Toyota Camry.
+ console.log(`The car is ${myCar.getAge()} years old.`); // Output: The car is 9 years old.
+
+ //Example 2
+
+ class BankAccount {
+   constructor(ownerName, balance) {
+     this.ownerName = ownerName;
+     this.balance = balance;
+   }
+ 
+   // Method to deposit money into the account
+   deposit(amount) {
+     this.balance += amount;
+     console.log(`${amount} deposited. Current balance: ${this.balance}`);
+   }
+ 
+   // Method to withdraw money from the account
+   withdraw(amount) {
+     if (amount > this.balance) {
+       console.log("Insufficient funds");
+     } else {
+       this.balance -= amount;
+       console.log(`${amount} withdrawn. Current balance: ${this.balance}`);
+     }
+   }
+ 
+   // Method to display account details
+   display() {
+     console.log(`Account owner: ${this.ownerName}`);
+     console.log(`Current balance: ${this.balance}`);
+   }
+ }
+ 
+ // Create an instance of the 'BankAccount' class
+ const myAccount = new BankAccount('John Doe', 1000);
+ 
+ // Access methods of the object
+ myAccount.deposit(500); // Output: 500 deposited. Current balance: 1500
+ myAccount.withdraw(200); // Output: 200 withdrawn. Current balance: 1300
+ myAccount.display(); // Output: Account owner: John Doe
+                      //         Current balance: 1300
+ 
