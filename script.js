@@ -502,4 +502,20 @@ const salesTax = 0.16;
  console.log (`Total price (with tax) for Pen :$${product1.calculateTotal(salesTax)}`);
  const Total2 = product2.calculateTotal(salesTax);
  console.log (`Total price (with tax) for Book :$${product2.calculateTotal(salesTax)}`);
- 
+
+ //Callback functions
+ // Function that takes a callback
+function performOperation(x, y, callback) {
+  // Perform some operation with the provided values
+  const result = x + y;
+  // Call the callback function and pass the result
+  callback(result);
+}
+
+// Callback function to display the result
+function displayResult(result) {
+  console.log("The result is:", result);
+}
+
+// Call the function with a callback
+performOperation(3, 4, displayResult);
