@@ -519,3 +519,37 @@ function displayResult(result) {
 
 // Call the function with a callback
 performOperation(3, 4, displayResult);
+
+//Asynchronous Javascript
+//refers to the execution of code that doesn't necessarily run sequentially from top to bottom. Instead, it allows certain operations, such as fetching data from a server or performing time-consuming tasks, to occur in the background while the rest of the code continues to execute. 
+// Async and await operations
+// Simulating an asynchronous operation (e.g., fetching data from a server)
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const success = true;
+      if (success) {
+        const data = { id: 1, name: 'John Doe' };
+        resolve(data); // Resolve the promise with data
+      } else {
+        reject(new Error('Failed to fetch data')); // Reject the promise with an error
+      }
+    }, 2000); // Simulating a delay of 2 seconds
+  });
+}
+
+// Using async/await to handle asynchronous operation
+async function fetchAndDisplayData() {
+  console.log('Before fetching data');
+  try {
+    const data = await fetchData();
+    console.log('Received data:', data);
+  } catch (error) {
+    console.error('Error:', error.message);
+  }
+  console.log('After fetching data');
+}
+
+// Calling the async function
+fetchAndDisplayData();
+
