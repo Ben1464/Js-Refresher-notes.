@@ -553,3 +553,23 @@ async function fetchAndDisplayData() {
 // Calling the async function
 fetchAndDisplayData();
 
+
+let Person2 = {
+  name: "Andrew",
+  age:23,
+  race:"Japanasees",
+  location :{
+      pysical: "Japanasees",
+      adress:11
+  }
+}
+console.log (Person2);
+
+let price6 = 30000;
+if (price <= 25000) {
+    console.log("I can afford to buy");
+} else if (price6 < 35000) {
+    console.log("I can still afford to buy");
+} else {
+    console.log("Beyond this I can't afford to buy");
+}
