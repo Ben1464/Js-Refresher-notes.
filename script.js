@@ -573,3 +573,64 @@ if (price <= 25000) {
 } else {
     console.log("Beyond this I can't afford to buy");
 }
+
+let shop = {
+  name: "Wangai shop",
+  ownerName: "Wangai",
+  location:{
+    pysicall:"Narok",
+    adress: "Narok county"
+  },
+  production:"Deals with agro chemical"
+}
+console.log(shop);
+
+
+let price9 = 4000;
+if (price9>3000){
+  console.log("I can afford ");
+} else if (price9<=4000){
+ console.log("its within the range")
+} else {
+  console.log ("its too expensive man!");
+}
+
+//practice on class
+
+class School {
+  constructor(name, location, category) {
+    this.name = name;
+    this.location = location;
+    this.category = category;
+    this.students = []; // An array to store information about students enrolled in the school
+    this.teachers = []; // An array to store information about teachers working in the school
+  }
+
+  enrollStudent(studentName, grade) {
+    // Method to enroll a student in the school
+    this.students.push({ name: studentName, grade: grade });
+    console.log(`${studentName} enrolled in ${this.name}`);
+  }
+
+  hireTeacher(teacherName, subject) {
+    // Method to hire a teacher for the school
+    this.teachers.push({ name: teacherName, subject: subject });
+    console.log(`${teacherName} hired to teach ${subject} at ${this.name}`);
+  }
+
+  displayInfo() {
+    // Method to display information about the school
+    console.log(`School Name: ${this.name}`);
+    console.log(`Location: ${this.location}`);
+    console.log(`Category: ${this.category}`);
+    console.log(`Number of Students: ${this.students.length}`);
+    console.log(`Number of Teachers: ${this.teachers.length}`);
+  }
+}
+
+// Example usage:
+const mySchool = new School("ABC School", "Cityville", "Public");
+mySchool.enrollStudent("John Doe", 9);
+mySchool.enrollStudent("Jane Smith", 10);
+mySchool.hireTeacher("Mr. Brown", "Mathematics");
+mySchool.displayInfo();
