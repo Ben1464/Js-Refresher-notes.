@@ -634,3 +634,40 @@ mySchool.enrollStudent("John Doe", 9);
 mySchool.enrollStudent("Jane Smith", 10);
 mySchool.hireTeacher("Mr. Brown", "Mathematics");
 mySchool.displayInfo();
+ // more of while statements 
+  let d = 1;
+  while (d<=8) {
+    console.log(d);
+    d++;
+  }
+  //Scope
+  //Global variables
+  let c = "I am a global variable ";
+  function myFunction(){
+    let c = "I am a local variable";
+    console.log(c);
+  }
+  myFunction();
+  console.log(c);
+  //Local variables
+  function myFunction2(){
+    let c = "I am a local variable";
+    console.log(c);
+  }
+  myFunction2();
+  console.log(c);
+  //Block scope
+  if(true){
+    let c = "I am a local variable";
+    console.log(c);
+  }
+  console.log(c);
+  //local variables
+  function myFunction3(){
+    let c = "I am a local variable";
+    console.log(c);
+  }
+  myFunction3();
+  console.log(c);
+ 
+ 
