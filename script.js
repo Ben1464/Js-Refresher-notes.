@@ -652,4 +652,37 @@ myVehicle();
 //Example of a global scope
 let Vehicle = "Mercideze"
 console.log(Vehicle);
+//Example  2
+ function add(num1,num2){
+  return num1 + num2;
+ }
+ let results = add (7,9);
+ console.log(results);
+ //example 3
+ function allDay(){
+  let today = "Monday";
+  console.log(today);
+ }
+ allDay();
 
+ let Books = 400;
+ if (Books <=300){
+  console.log("I can buy");
+ }else if(Books>400){
+  console.log("I can buy");
+ }else{
+  console.log("anything beyond this is expensive");
+ }
+
+ let bet = 1;
+ while(bet<6){
+  console.log("bet");
+  bet++;
+ }
+
+ for (let b=1; b<10; b++){
+  console.log(b);
+ }
+
+ 
+ 
