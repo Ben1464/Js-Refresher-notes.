@@ -684,5 +684,39 @@ console.log(Vehicle);
   console.log(b);
  }
 
+ function Activate(){
+  console.log("i can activate this whole proes ")
+ }
+ Activate();
+// more examples
+let votingAge = 12;
+if (votingAge<18){
+  console.log("You;re not allowed to vote")
+}else if (votingAge=>18){
+  console.log("You're of age you can vote")
+}
+//The above example using ternary
+let votingAge1 =12;
+(votingAge1>18)? console.log("you can't vote"): console.log("you can't vote");
+
+//Ternary with multiple conditions
+let age9 = 9;
+let stageInLIfe =
+age9<13 ? "Child"
+: age9<=20 ? "Teenager"
+: age9 <= 30 ? "Adult"
+:"senior";
+console.log(stageInLIfe);
+
+
+let price10 = 100;
+let priceRange =
+price10 < 200 ? "I can afford"
+:price10 <= 300 ? "I can still aford to buy"
+:price10 > 400 ? "I can negotiate and if it gets to 350 i can buy"
+:"i cant buy boyend that price "
+console.log(priceRange);
+
+
  
  
