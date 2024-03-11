@@ -641,33 +641,15 @@ mySchool.displayInfo();
     d++;
   }
   //Scope
-  //Global variables
-  let c = "I am a global variable ";
-  function myFunction(){
-    let c = "I am a local variable";
-    console.log(c);
-  }
-  myFunction();
-  console.log(c);
-  //Local variables
-  function myFunction2(){
-    let c = "I am a local variable";
-    console.log(c);
-  }
-  myFunction2();
-  console.log(c);
-  //Block scope
-  if(true){
-    let c = "I am a local variable";
-    console.log(c);
-  }
-  console.log(c);
-  //local variables
-  function myFunction3(){
-    let c = "I am a local variable";
-    console.log(c);
-  }
-  myFunction3();
-  console.log(c);
+ //Local scope
+ function myVehicle (){
+  let Vehicle = "Mercideze"
+console.log(Vehicle);
+ }
  
- 
+myVehicle();
+//Global scope
+//Example of a global scope
+let Vehicle = "Mercideze"
+console.log(Vehicle);
+
