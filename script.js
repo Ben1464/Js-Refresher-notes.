@@ -717,6 +717,13 @@ price10 < 200 ? "I can afford"
 :"i cant buy boyend that price "
 console.log(priceRange);
 
+let price11 = 5500;
+let priceRange11 =
+price11<=1000 ? "I can afford"
+:price11>1000 ? "I cant afford"
+:"its expensive"
+console.log (priceRange11);
+
 
  
  
