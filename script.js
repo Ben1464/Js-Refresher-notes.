@@ -724,6 +724,32 @@ price11<=1000 ? "I can afford"
 :"its expensive"
 console.log (priceRange11);
 
+class Rectangle {
+  constructor(height,width){
+    this.height = height;
+    this.width =width;
+  }
+  calculateArea(){
+    return this.width*this.height;
+  }
+}
+const rectagle = new Rectangle (5,9);
+console.log(rectagle.calculateArea());
 
- 
- 
+class Volume  {
+  constructor (height,width,length){
+  this.height = height;
+  this.width = width;
+  this.length = length
+}
+  calculateVolume(){
+    return this.height*this.width*this.length;
+  }
+  calculateArea(){
+    return this.height*this.width
+  }
+}
+const volume = new Volume (5,9,3);
+console.log(volume.calculateVolume());
+console.log(volume.calculateArea());
+
