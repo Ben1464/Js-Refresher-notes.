@@ -753,3 +753,33 @@ const volume = new Volume (5,9,3);
 console.log(volume.calculateVolume());
 console.log(volume.calculateArea());
 
+
+//More examples
+
+class NewStudent {
+  constructor(classes, marks, age) {
+    this.classes = classes;
+    this.age = age;
+    this.marks = marks;
+  }
+
+  registerStudent() {
+    return `I can register a student to my class ${this.classes} who scored ${this.marks} marks and he is ${this.age} years old`;
+  }
+
+  static existingStudents(students) {
+    let result = "Registered students:\n";
+    students.forEach((student, index) => {
+      result += `${index + 1}. ${student.classes} who scored ${student.marks} marks and is ${student.age} years old\n`;
+    });
+    return result;
+  }
+}
+
+const student1 = new NewStudent("Math", 20, 40);
+const student2 = new NewStudent("English", 30, 50);
+
+const allStudents = [student1, student2];
+
+console.log(NewStudent.existingStudents(allStudents));
+
