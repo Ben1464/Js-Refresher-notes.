@@ -52,6 +52,13 @@ console.log(7+18);
  } else {
     console.log("Both k and m are negative numbers");
  }
+ let problem = "Cbd";
+ let solution = "Absolute";
+ if(solution === "Absolute"){
+    console.log("The problem is solved");
+ }else{
+  console.log("cant be solved")
+ }
  // Not (!)
  let p = 12;
  let q = -2;
