@@ -790,3 +790,11 @@ const allStudents = [student1, student2];
 
 console.log(NewStudent.existingStudents(allStudents));
 
+function calculateAreaOfRectangle(length4,width4){
+  return length4*width4;
+}
+  const lenth4 = 6;
+  const width4 = 9;
+  // const calculateAreaOfRectangle = length4*width4;
+
+console.log (calculateAreaOfRectangle(6,9))
