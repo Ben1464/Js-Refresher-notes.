@@ -795,6 +795,28 @@ function calculateAreaOfRectangle(length4,width4){
 }
   const lenth4 = 6;
   const width4 = 9;
-  // const calculateAreaOfRectangle = length4*width4;
+  
 
 console.log (calculateAreaOfRectangle(6,9))
+
+let driver = {
+  name: "Alex",
+  age: 25,
+  license: true,
+  car: {
+    make: "Mercedes",
+    model: "C300",
+  }
+}
+console.log(driver)
+
+let marks = 250;
+if(marks>=300){
+  console.log("The student passed")
+}else if(marks===250){
+  console.log("The student is average")
+}else{
+  console.log("The student failed")
+}
+ 
+
