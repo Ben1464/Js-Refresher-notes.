@@ -818,5 +818,32 @@ if(marks>=300){
 }else{
   console.log("The student failed")
 }
- 
 
+
+ class Vehicle1 {
+  constructor (model,year){
+    this.model=model;
+    this.year=year;
+  }
+  getInfor(){
+    return `This is a ${this.year} ${this.model} car.`;
+  }
+ }
+const hisCar = new Vehicle1 ("Mercedes", 2020);
+console.log(hisCar.getInfor());
+
+class Book {
+  constructor(title,author){
+    this.title=title;
+    this.authr=author;
+  }
+  getInfor (){
+    return`This is a ${this.title} by ${this.author}`;
+
+  }
+}
+const book1 = new Book ("The Hobbit", "J.R.R. Tolkien");
+const book2 = new Book ("The Lord of the Rings", "J.R.R. Tolkien");
+
+console.log(book1.getInfor());
+console.log(book2.getInfor());
