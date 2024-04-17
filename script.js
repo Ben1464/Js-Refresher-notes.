@@ -847,3 +847,73 @@ const book2 = new Book ("The Lord of the Rings", "J.R.R. Tolkien");
 
 console.log(book1.getInfor());
 console.log(book2.getInfor());
+
+// Simple example of asychronous function
+
+async function hello(){
+  return "Hello world again"
+}
+hello().then(result=>{
+  console.log(result)
+});
+
+// Simulating an asynchronous operation that returns a promise
+function fetchData() {
+  return new Promise((resolve, reject) => {
+    // Simulate fetching data after a delay
+    setTimeout(() => {
+      const data = { message: "Data fetched successfully!" };
+      resolve(data); // Resolve the promise with the fetched data
+    }, 2000); // Simulate a delay of 2 seconds
+  });
+}
+
+// Async function that uses await to wait for the promise to resolve
+async function fetchDataAsync() {
+  try {
+    const data = await fetchData(); // Wait for the promise to resolve
+    console.log(data.message); // Log the fetched data
+  } catch (error) {
+    console.error("Error fetching data:", error); // Log any errors
+  }
+}
+
+// Call the async function
+fetchDataAsync();
+
+// asychronous function to fetch data from an API
+
+// async function fetchData() {
+//   try {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//     if (!response.ok) {
+//       throw new Error("Failed to fetch data");
+//     }
+//     const data = await response.json();
+//     return data;
+//   } catch (error) {
+//     if (error) {
+//       console.error("Error fetching data:", error.message);
+//     } else {
+//       console.error("Error fetching data: Unknown error");
+//     }
+//   }
+// }
+
+
+class Market {
+  constructor (center,available,quantity){
+    this.center = center;
+    this.available = available;
+    this.quantity = quantity;
+  }
+  getInfor (){
+    return `This is a ${this.center} with a price of ${this.available} and quantity of ${this.quantity}`;
+  }
+}
+var center = new Center ("Kanyuambora");
+var available = new Available (2000);
+var quantity = new Quantity (2);
+var product = new Market (center,available,quantity);
+console.log(product.getInfor());
+
