@@ -901,19 +901,14 @@ fetchDataAsync();
 // }
 
 
-class Market {
-  constructor (center,available,quantity){
-    this.center = center;
-    this.available = available;
-    this.quantity = quantity;
-  }
-  getInfor (){
-    return `This is a ${this.center} with a price of ${this.available} and quantity of ${this.quantity}`;
-  }
+
+meat = 300;
+if(meat<=300){
+  console.log("This is legit meat")
+}else if(meat>399)
+{
+  console.log("This is not legit meat")
+}else{
+  console.log("I don't know")
 }
-var center = new Center ("Kanyuambora");
-var available = new Available (2000);
-var quantity = new Quantity (2);
-var product = new Market (center,available,quantity);
-console.log(product.getInfor());
 
